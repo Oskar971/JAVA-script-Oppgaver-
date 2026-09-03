@@ -29,8 +29,11 @@ const person = {
   favorittFarge: "blå" 
 };
 
+const tekst = `Hei, mitt navn er ${person.fornavn} ${person.etternavn}`
 
-let navn = "Oskar";
-let antall = navn. length; 
+console.log(tekst);
 
-console.log(" Hallo " + navn + ". Ditt navn har " + antall + " bokstaver." )
+// let navn = "Oskar";  
+// let antall = navn. length; 
+
+// console.log(" Hallo " + navn + ". Ditt navn har " + antall + " bokstaver." )
