@@ -139,23 +139,24 @@
 // }
 
 // Oppgave 2 
-let sjekk = document.getElementById("sjekk");
+//let sjekk = document.getElementById("sjekk");
 
-sjekk.onclick = function() {
-  let alder = document.getElementById("alder").value;
-  let trafikalt = document.getElementById("trafikalt").checked;
-  let resultat = document.getElementById("resultat");
+//sjekk.onclick = function() {
+  //let alder = document.getElementById("alder").value;
+  //let trafikalt = document.getElementById("trafikalt").checked;
+  //let resultat = document.getElementById("resultat");
 
-  if (alder < 16) {
-    resultat.innerText = "Du er for ung til å øvelseskjøre.";
-  } 
-  else if (alder >= 25) {
-    resultat.innerText = "Du kan øvelseskjøre uten trafikalt grunnkurs.";
-  } 
-  else if (trafikalt) {
-    resultat.innerText = "Du kan øvelseskjøre.";
-  } 
-  else {
-    resultat.innerText = "Du må ha trafikalt grunnkurs.";
-  }
-};
+  //if (alder < 16) {
+    //resultat.innerText = "Du er for ung til å øvelseskjøre.";
+  //} 
+ // else if (alder >= 25) {
+    //resultat.innerText = "Du kan øvelseskjøre uten trafikalt grunnkurs.";
+  //} 
+  //else if (trafikalt) {
+    //resultat.innerText = "Du kan øvelseskjøre.";
+  //} 
+  //else {
+    //resultat.innerText = "Du må ha trafikalt grunnkurs.";
+ // }
+//};
+
