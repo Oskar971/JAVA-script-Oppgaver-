@@ -12,10 +12,10 @@
    // console.log(`Det var en gang en ${adjektiv1} IM-elev som het ${navn}. I det ${adjektiv2} JavaScript-kurset lærte ${navn} om variabler og funksjoner sammen med ${adjektiv3} klassekamerater. Læreren i kurset er veldig ${adjektiv4}, noe som gjør kursdagene ekstra spennende.`);
 //}
 
-//genererHistorie("Oskar", "glad", "spennende", "hyggelige", "morsom");
+//genererHistorie("Oskar", "glad", "spennende"‰, "hyggelige", "morsom");
 
 let frukter = ["eple", "pære", "banan" ];
-let bær = ["jordbær", "bringebær", "blåbær"];
+
 
 for (let i = 0; i < frukter.length; i++) {
 
@@ -26,12 +26,25 @@ frukter.push(kiwi);
 
 frukter.shift();  
 
+let bær = ["jordbær", "bringebær", "blåbær"];
 
 let fruktOgbær = [];
 
 for (let i = 0; i < frukter.length; i++) {
-
-    fruktOgbær.push(frukter[i]);
-
+     fruktOgbær.push(frukter[i]);
     fruktOgbær.push(bær[i]); 
 }
+
+function skrivListe(liste) {
+    let html = "<ul>";
+
+    for(let i = 0; i < liste.length; i++) {
+        html += "<li>" + liste[i] + "</li>";
+
+    }
+
+    html += "</ul>";
+    document.body.innerHTML += html;
+}
+
+skrivListe(fruktOgbær); 
