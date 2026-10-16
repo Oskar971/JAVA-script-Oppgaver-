@@ -106,35 +106,56 @@
 
 
 
-const nå = new Date();
+// const nå = new Date();
 
 
-const erFredag = nå.getDay() === 5;
+// const erFredag = nå.getDay() === 5;
 
 
-const timer = nå.getHours();
-const minutter = nå.getMinutes();
+// const timer = nå.getHours();
+// const minutter = nå.getMinutes();
 
 
-if (erFredag) {
+// if (erFredag) {
   
-  if (timer > 14 || (timer === 14 && minutter >= 25)) {
-    console.log("God helg – sees på mandag!");
-  } else {
-    console.log("Det er fredag!");
+//   if (timer > 14 || (timer === 14 && minutter >= 25)) {
+//     console.log("God helg – sees på mandag!");
+//   } else {
+//     console.log("Det er fredag!");
+//   }
+// } else {
+//   console.log("Det er ikke fredag ennå, jobb videre!");
+// }
+
+// setInterval(erFredag, 10000);
+
+
+
+// let klikks = 0; 
+
+// function handleOnClick() {
+//     klikks += 1;
+//     console.log(klikks); 
+// }
+
+// Oppgave 2 
+let sjekk = document.getElementById("sjekk");
+
+sjekk.onclick = function() {
+  let alder = document.getElementById("alder").value;
+  let trafikalt = document.getElementById("trafikalt").checked;
+  let resultat = document.getElementById("resultat");
+
+  if (alder < 16) {
+    resultat.innerText = "Du er for ung til å øvelseskjøre.";
+  } 
+  else if (alder >= 25) {
+    resultat.innerText = "Du kan øvelseskjøre uten trafikalt grunnkurs.";
+  } 
+  else if (trafikalt) {
+    resultat.innerText = "Du kan øvelseskjøre.";
+  } 
+  else {
+    resultat.innerText = "Du må ha trafikalt grunnkurs.";
   }
-} else {
-  console.log("Det er ikke fredag ennå, jobb videre!");
-}
-
-setInterval(erFredag, 10000);
-
-
-
-let klikks = 0; 
-
-function handleOnClick() {
-    klikks += 1;
-    console.log(klikks); 
-}
-
+};
