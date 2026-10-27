@@ -14,37 +14,70 @@
 
 //genererHistorie("Oskar", "glad", "spennende"‰, "hyggelige", "morsom");
 
-let frukter = ["eple", "pære", "banan" ];
+//let frukter = ["eple", "pære", "banan" ];
 
 
-for (let i = 0; i < frukter.length; i++) {
+//for (let i = 0; i < frukter.length; i++) {
 
-    console.log(frukter[i]); 
+  //  console.log(frukter[i]); 
+//}
+
+//frukter.push(kiwi); 
+
+//frukter.shift();  
+
+//let bær = ["jordbær", "bringebær", "blåbær"];
+
+//let fruktOgbær = [];
+
+//for (let i = 0; i < frukter.length; i++) {
+    // fruktOgbær.push(frukter[i]);
+  //  fruktOgbær.push(bær[i]); 
+//}
+
+//function skrivListe(liste) {
+   // let html = "<ul>";
+
+ //   for(let i = 0; i < liste.length; i++) {
+//        html += "<li>" + liste[i] + "</li>";
+
+   // }
+
+    //html += "</ul>";
+  //  document.body.innerHTML += html;
+//}
+
+//skrivListe(fruktOgbær); -
+
+//Oppgave 7 
+
+//let scores = [];
+
+//function leggTil() {
+    //let navn = document.getElementById("navn").value;
+    //let score = Number(document.getElementById("score").value);
+    
+    //scores.push({ navn, score });
+
+    //scores.sort((a, b) => b.score - a.score);
+
+    //let liste = document.getElementById("liste");
+    //liste.innerHTML = " ";
+
+    //for (let spiller of scores) {
+      //  liste.innerHTML += `<li>${spiller.navn}: ${spiller.score}</li>`;
+
+    //}
+//}
+
+
+//Opgave 6 
+
+function erPalindrom(tekst) {
+    let baklengs = tekst.split( " " ).reverse().join(" ");
+
+    return tekst === baklengs; 
 }
 
-frukter.push(kiwi); 
-
-frukter.shift();  
-
-let bær = ["jordbær", "bringebær", "blåbær"];
-
-let fruktOgbær = [];
-
-for (let i = 0; i < frukter.length; i++) {
-     fruktOgbær.push(frukter[i]);
-    fruktOgbær.push(bær[i]); 
-}
-
-function skrivListe(liste) {
-    let html = "<ul>";
-
-    for(let i = 0; i < liste.length; i++) {
-        html += "<li>" + liste[i] + "</li>";
-
-    }
-
-    html += "</ul>";
-    document.body.innerHTML += html;
-}
-
-skrivListe(fruktOgbær); 
+console.log(erPalindrom("level")); 
+console.log(erPalindrom("jei")); 

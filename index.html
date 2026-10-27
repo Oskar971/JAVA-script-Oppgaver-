@@ -2,28 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Java </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<label>Alder:</label>
-<input type="number" id="alder">
 
-<br><br>
+<h1>High score liste</h1>
 
-<label>
-  <input type="checkbox" id="trafikalt">
-  Har trafikalt grunnkurs
-</label>
+<input id="navn" placeholder="Navn">
+<input id="score" type="number" placeholder="Score"> 
 
-<br><br>
+<button onclick="leggTil()">Legg til </button>
 
-<button type="button" id="sjekk">Sjekk</button>
 
-<p id="resultat"></p>
+<ul id="liste"></ul>
+
+
+
 
 <script src="Java3.js"></script>
-<script src="script.js"></script>
 
 </body>
 </html>
+
+
+
+
