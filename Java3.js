@@ -79,5 +79,5 @@ function erPalindrom(tekst) {
     return tekst === baklengs; 
 }
 
-console.log(erPalindrom("level")); 
-console.log(erPalindrom("jei")); 
+console.log(erPalindrom("levdnfknenl")); 
+console.log(erPalindrom("hei")); 
